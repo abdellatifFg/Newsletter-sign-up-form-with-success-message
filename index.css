@@ -2,6 +2,7 @@
   --dark-slate-gray: hsl(234, 29%, 20%);
   --grey: hsl(231, 7%, 60%);
   --charcoal-grey: hsl(235, 18%, 26%);
+  --tomato: hsl(4, 100%, 67%);
 }
 
 @font-face {
@@ -36,7 +37,7 @@ body {
   display: flex;
   gap: 50px;
   border-radius: 20px;
-  color: var();
+  color: white;
 }
 
 .container .right {
@@ -94,7 +95,7 @@ button {
 .container input {
   margin-bottom: 10px;
 }
-.container button {
+button {
   color: white;
   background-color: var(--dark-slate-gray);
   border-radius: 5px;
@@ -108,4 +109,31 @@ button:hover {
 .container label {
   font-family: Roboto-bold;
   font-size: 12px;
+}
+
+/* success message styling */
+
+.success-msg-container {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  background-color: white;
+  border-radius: 20px;
+  padding: 40px;
+}
+
+.success-msg-container img {
+  width: 60px;
+}
+
+.success-msg-container h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.success-msg-container button {
+  background-color: var(--tomato);
+  font-size: 12px;
+  padding: 10px;
 }
