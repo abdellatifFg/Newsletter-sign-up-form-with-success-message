@@ -166,9 +166,19 @@ button:hover {
     min-height: 100vh;
     justify-content: center;
   }
-  .success-msg-container button {
-    
-  }
+}
+
+.label {
+  display: flex;
+  justify-content: space-between;
+}
+
+.label .error {
+  color: var(--tomato);
+}
+
+.wrongEmail {
+  outline: 2px solid var(--tomato);
 }
 
 .hided {
